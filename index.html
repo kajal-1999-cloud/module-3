@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>find your location</title>
+    <link rel="stylesheet" href="style.css">
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <h3>My Public IP ADDRESS : <span id="ipAddress"></span></h3><br>
+    <button id="button-get">Get Data</button>
+
+
+    <div class="loader" id="loader"></div>
+
+    <div id="outer">
+        <div id="inner">
+            <table>
+                <tr>
+                    <td><span id="lat"></span></td>
+                    <td><span id="city"></span></td>
+                    <td><span id="organisation"></span></td>
+                </tr>
+                <tr>
+                    <td><span id="long"></span></td>
+                    <td><span id="region"></span></td>
+                    <td><span id="hostname"></span></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div id="map"></div>
+    <div id="after-map">
+        <div id="inner-map">
+            <p id="timeZone"></p>
+            <p id="dateTime"></p>
+            <p id="pincode"></p>
+            <p id="msg"></p>
+        </div>
+    </div>
+    <div id="search">
+        <input type="text" id="searchbar" class="search" placeholder="Filter" >
+    </div>
+
+    <div id="postList"></div>
+    <!-- <iframe src="https://maps.google.com/maps?q=18.4591212, 73.9695614&output=embed" width="360" height="270" frameborder="0" style="border:0"></iframe> -->
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/fd3faded25.js" crossorigin="anonymous"></script>
+</body>
+</html>
